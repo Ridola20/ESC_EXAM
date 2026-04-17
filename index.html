@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESC 311 â€¢ Web Design Practical</title>
+  <meta name="description" content="ESC 311 Web Design Practical (2024/2025): Home, About, Contact, ESC Gallery, and Advertisement pages." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="container">
+      <div class="nav" role="navigation" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <div>
+            <div class="brand-title">ESC 311</div>
+            <div class="brand-sub">Group Website • 2025/2026</div>
+          </div>
+        </a>
+
+        <button class="hamburger" data-hamburger aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="navlinks">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="contact.html">Contact</a>
+          <a data-nav href="esc.html">ESC</a>
+          <a data-nav href="advertisement.html">Partners</a>
+          <button class="btn" type="button" data-theme-toggle>
+            <span class="icon" aria-hidden="true" data-icon>â˜¾</span>
+            <span>Theme</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="image-modal">
+    <img src="" alt="Full view image">
+    <button class="image-modal-close" aria-label="Close">âœ•</button>
+  </div>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <div class="grid grid-2">
+        <div class="card card-pad">
+          <div class="pill">Answer all â€¢ Home / About / Contact / ESC / Advertisement</div>
+          <h1>Professional group website for ESC 311.</h1>
+          <p>
+            This site is structured exactly for the practical: an <strong>Index</strong> page with unique colors and a
+            <strong>members table</strong>, an <strong>About</strong> page (biographies), a <strong>Contact</strong> page,
+            an <strong>ESC</strong> page (3 labeled photos), and an <strong>Advertisement</strong> page with many adverts and logos.
+          </p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn btn-primary" href="about.html">View Group Bios</a>
+            <a class="btn" href="esc.html">See ESC Photos</a>
+          </div>
+          <p style="margin:14px 0 0; color: var(--muted); font-size: 14px">
+            Replace the placeholders (names, matric numbers, department, phone/email) and drop your photos into:
+            <code>assets/members/</code> and <code>assets/esc/</code>.
+          </p>
+        </div>
+
+        <aside class="card card-pad">
+          <h3 style="margin:0 0 8px">Quick checklist</h3>
+          <div class="surface" style="padding:14px">
+            <div style="display:grid; gap:10px; color: var(--muted); font-size: 14px">
+              <div><strong>1.</strong> Pages: Home, About, Contact, ESC, Advertisement</div>
+              <div><strong>2.</strong> Home: unique background/text color + members table + member pictures</div>
+              <div><strong>3.</strong> About: biography for all members</div>
+              <div><strong>4.</strong> Contact: contacts for all members</div>
+              <div><strong>5.</strong> ESC: 3 labeled photos around ESC building</div>
+              <div><strong>6.</strong> Ads: many adverts + CSCU logo + ESC logo</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="card card-pad" aria-labelledby="members">
+      <div class="section-title">
+        <h2 id="members">Group members</h2>
+        <p>Names, matric no, department (tabular form) + photos</p>
+      </div>
+
+      <div class="table-wrap home-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Member</th>
+              <th>Matric No.</th>
+              <th>Department</th>
+              <th class="td-muted">Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="namecell">
+                  <div class="avatar">
+                    <img src="assets/members/member-1.jpg" alt="Akomolafe Daniel Olamilekan" class="clickable">
+                  </div>
+                  <div>
+                    <div style="font-weight:800">Akomolafe Daniel Olamilekan</div>
+                    <div class="td-muted" style="font-size:13px">Group Leader</div>
+                  </div>
+                </div>
+              </td>
+              <td>230501092</td>
+              <td>Civil Engineering</td>
+              <td class="td-muted">Still Learning</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="namecell">
+                  <div class="avatar">
+                    <img src="assets/members/member-2.jpg" alt="Oluganna Blessing Toyosi" class="clickable">
+                  </div>
+                  <div>
+                    <div style="font-weight:800">Oluganna Blessing Toyosi</div>
+                    <div class="td-muted" style="font-size:13px">Project Coordinator</div>
+                  </div>
+                </div>
+              </td>
+              <td>230501008</td>
+              <td>Civil Engineering</td>
+              <td class="td-muted">Project Coordinator</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="namecell">
+                  <div class="avatar">
+                    <img src="assets/members/member-3.jpg" alt="Boladale Abeeb Oluwafemi" class="clickable">
+                  </div>
+                  <div>
+                    <div style="font-weight:800">Boladale Abeeb Oluwafemi</div>
+                    <div class="td-muted" style="font-size:13px">Member</div>
+                  </div>
+                </div>
+              </td>
+              <td>230407146</td>
+              <td>Biology Education</td>
+              <td class="td-muted">Group member</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="namecell">
+                  <div class="avatar">
+                    <img src="assets/members/member-4.jpg" alt="GBADAMOSI ABDULMALIK OLAMIDE" class="clickable">
+                  </div>
+                  <div>
+                    <div style="font-weight:800">GBADAMOSI ABDULMALIK OLAMIDE</div>
+                    <div class="td-muted" style="font-size:13px">Member</div>
+                  </div>
+                </div>
+              </td>
+              <td>230501119</td>
+              <td>Civil Engineering</td>
+              <td class="td-muted">Learning</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="namecell">
+                  <div class="avatar">
+                    <img src="assets/members/member-5.jpg" alt="Adeyemi israel oluwatimilehin" class="clickable">
+                  </div>
+                  <div>
+                    <div style="font-weight:800">Adeyemi israel oluwatimilehin</div>
+                    <div class="td-muted" style="font-size:13px">Web Designer</div>
+                  </div>
+                </div>
+              </td>
+              <td>231003129</td>
+              <td>Political Science</td>
+              <td class="td-muted">Web designer</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="namecell">
+                  <div class="avatar">
+                    <img src="assets/members/member-6.jpg" alt="Oloyede joy Adewale" class="clickable">
+                  </div>
+                  <div>
+                    <div style="font-weight:800">Oloyede joy Adewale</div>
+                    <div class="td-muted" style="font-size:13px">Member</div>
+                  </div>
+                </div>
+              </td>
+              <td>230102006</td>
+              <td>Animal Science</td>
+              <td class="td-muted">Member</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="namecell">
+                  <div class="avatar">
+                    <img src="assets/members/member-7.jpg" alt="Ridwan Sanusi Olaoluwa" class="clickable">
+                  </div>
+                  <div>
+                    <div style="font-weight:800">Ridwan Sanusi Olaoluwa</div>
+                    <div class="td-muted" style="font-size:13px">Designer/Developer</div>
+                  </div>
+                </div>
+              </td>
+              <td>2303030</td>
+              <td>Mass Communication</td>
+              <td class="td-muted">Designer/Developer</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="namecell">
+                  <div class="avatar">
+                    <img src="assets/members/member-8.jpg" alt="Solomon Wright Gideon" class="clickable">
+                  </div>
+                  <div>
+                    <div style="font-weight:800">Solomon Wright Gideon</div>
+                    <div class="td-muted" style="font-size:13px">Member</div>
+                  </div>
+                </div>
+              </td>
+              <td>220407055</td>
+              <td>Science Education (biology education)</td>
+              <td class="td-muted">Member</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="namecell">
+                  <div class="avatar">
+                    <img src="assets/members/member-9.jpg" alt="Alade koyum" class="clickable">
+                  </div>
+                  <div>
+                    <div style="font-weight:800">Alade koyum</div>
+                    <div class="td-muted" style="font-size:13px">Group member</div>
+                  </div>
+                </div>
+              </td>
+              <td>230501030</td>
+              <td>Civil Engineering</td>
+              <td class="td-muted">Group member</td>
+            </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="card card-pad" style="margin-top:18px" aria-labelledby="profiles">
+      <div class="section-title">
+        <h3 id="profiles">Member mini-profiles</h3>
+        <p>Compact professional profiles for the ESC 311 team.</p>
+      </div>
+
+      <div class="member-cards">
+        <article class="member-card surface">
+          <img src="assets/members/member-1.jpg" alt="Akomolafe Daniel Olamilekan" class="clickable">
+          <div class="profile-copy">
+            <h4>Akomolafe Daniel Olamilekan</h4>
+            <p>Decoration, web design, and furniture specialist for the ESC 311 practical.</p>
+            <div class="tags">
+              <span class="tag">Decoration</span>
+              <span class="tag">Web Design</span>
+              <span class="tag">Furniture</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="member-card surface">
+          <img src="assets/members/member-2.jpg" alt="Oluganna Blessing Toyosi" class="clickable">
+          <div class="profile-copy">
+            <h4>Oluganna Blessing Toyosi</h4>
+            <p>300-level civil engineering student focused on web design, branding, and campus outreach.</p>
+            <div class="tags">
+              <span class="tag">Web Design</span>
+              <span class="tag">Barbing</span>
+              <span class="tag">Poultry</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="member-card surface">
+          <img src="assets/members/member-3.jpg" alt="Boladale Abeeb Oluwafemi" class="clickable">
+          <div class="profile-copy">
+            <h4>Boladale Abeeb Oluwafemi</h4>
+            <p>Creative designer and painter contributing visual identity and artwork to the project.</p>
+            <div class="tags">
+              <span class="tag">Graphic Design</span>
+              <span class="tag">Painting</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="member-card surface">
+          <img src="assets/members/member-4.jpg" alt="GBADAMOSI ABDULMALIK OLAMIDE" class="clickable">
+          <div class="profile-copy">
+            <h4>GBADAMOSI ABDULMALIK OLAMIDE</h4>
+            <p>Visual communications lead responsible for graphics, layouts, and creative direction.</p>
+            <div class="tags">
+              <span class="tag">Graphics</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="member-card surface">
+          <img src="assets/members/member-5.jpg" alt="Adeyemi israel oluwatimilehin" class="clickable">
+          <div class="profile-copy">
+            <h4>Adeyemi israel oluwatimilehin</h4>
+            <p>UI/UX designer focused on polished web presentation and user experience.</p>
+            <div class="tags">
+              <span class="tag">Web Design</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Graphic Design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="member-card surface">
+          <img src="assets/members/member-6.jpg" alt="Oloyede joy Adewale" class="clickable">
+          <div class="profile-copy">
+            <h4>Oloyede joy Adewale</h4>
+            <p>Project contributor with a strong focus on agricultural and animal science content.</p>
+            <div class="tags">
+              <span class="tag">Farming</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="member-card surface">
+          <img src="assets/members/member-7.jpg" alt="Ridwan Sanusi Olaoluwa" class="clickable">
+          <div class="profile-copy">
+            <h4>Ridwan Sanusi Olaoluwa</h4>
+            <p>Full-stack developer and UI/UX designer providing technical implementation and visual polish.</p>
+            <div class="tags">
+              <span class="tag">Full-stack Development</span>
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Graphics</span>
+              <span class="tag">Illustration</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="member-card surface">
+          <img src="assets/members/member-8.jpg" alt="Solomon Wright Gideon" class="clickable">
+          <div class="profile-copy">
+            <h4>Solomon Wright Gideon</h4>
+            <p>Content and digital marketing lead, responsible for messaging and online visibility.</p>
+            <div class="tags">
+              <span class="tag">Digital Marketing</span>
+              <span class="tag">Google Expert</span>
+              <span class="tag">Content Creation</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="member-card surface">
+          <img src="assets/members/member-9.jpg" alt="Alade koyum" class="clickable">
+          <div class="profile-copy">
+            <h4>Alade koyum</h4>
+            <p>Technical support and content contributor focused on coding, design, and editing.</p>
+            <div class="tags">
+              <span class="tag">Coding</span>
+              <span class="tag">Graphic Design</span>
+              <span class="tag">Editing</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© ESC 311 Group • 2024/2025 session</div>
+      <div>
+        <a href="contact.html" class="btn" style="padding:8px 10px">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

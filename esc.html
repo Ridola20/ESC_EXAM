@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESC â€¢ Photo Gallery</title>
+  <meta name="description" content="ESC page: 3 labeled pictures taken around the ESC building." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="container">
+      <div class="nav" role="navigation" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <div>
+            <div class="brand-title">ESC 311</div>
+            <div class="brand-sub">Group Website • 2025/2026</div>
+          </div>
+        </a>
+
+        <button class="hamburger" data-hamburger aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="navlinks">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="contact.html">Contact</a>
+          <a data-nav href="esc.html">ESC</a>
+          <a data-nav href="advertisement.html">Partners</a>
+          <button class="btn" type="button" data-theme-toggle>
+            <span class="icon" aria-hidden="true" data-icon>â˜¾</span>
+            <span>Theme</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="image-modal">
+    <img src="" alt="Full view image">
+    <button class="image-modal-close" aria-label="Close">âœ•</button>
+  </div>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <div class="card card-pad">
+        <div class="pill">ESC page â€¢ 3 labeled photos</div>
+        <h1>ESC building gallery.</h1>
+        <p>
+          Explore the ESC building with three high-impact perspectives that showcase the campus entrance, architectural context, and core facility areas. Designed for a premium institutional presentation.
+        </p>
+      </div>
+    </section>
+
+    <section class="card card-pad" aria-labelledby="gallery">
+      <div class="section-title">
+        <h2 id="gallery">Gallery (3 pictures + labels)</h2>
+        <p>Professional visual presentation of the ESC building environment.</p>
+      </div>
+
+      <div class="gallery esc-gallery">
+        <figure class="large">
+          <img src="assets/esc/esc-1.jpg" alt="Prominent campus architecture and flagstone entrance" class="clickable">
+          <figcaption><strong>Photo 1:</strong> Prominent campus architecture and flagstone entrance.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/esc/esc-2.jpg" alt="Exterior walkway and campus circulation zone" class="clickable">
+          <figcaption><strong>Photo 2:</strong> Exterior walkway and campus circulation zone.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/esc/esc-3.jpg" alt="Architectural detail and facility frontage" class="clickable">
+          <figcaption><strong>Photo 3:</strong> Architectural detail and facility frontage.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© ESC 311 Group • ESC Gallery</div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap">
+        <a class="btn" href="index.html" style="padding:8px 10px">Home</a>
+        <a class="btn btn-primary" href="advertisement.html" style="padding:8px 10px">Partners</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
