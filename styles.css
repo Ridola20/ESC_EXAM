@@ -242,7 +242,7 @@ body.light-mode .topbar{
   overflow-x: scroll;
 }
 table{
-  width: 100%;
+  /* width: 100%; */
   border-collapse: separate;
   border-spacing: 0;
   min-width: 720px;
